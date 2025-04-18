@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Memories</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #121212; /* Dark background */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #1db954; /* Spotify green */
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    iframe {
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      height: 80px;
+      border: none;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .photo {
+      background: #181818; /* Dark card background */
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+    }
+
+    .photo img {
+      width: 100%;
+      display: block;
+      border-bottom: 5px solid #1db954; /* Spotify green border */
+    }
+
+    .caption {
+      padding: 15px;
+      font-size: 1.1rem;
+      text-align: center;
+      color: #b3b3b3; /* Light gray for captions */
+      font-weight: bold;
+    }
+
+    .message {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #b3b3b3;
+      max-width: 700px;
+      margin-top: 40px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MEMORY 1.0</h1>
+    <!-- Spotify Player -->
+    <iframe src="https://open.spotify.com/embed/track/1AJuAdgOh2qfF0BP2ZY3vZ?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </header>
+
+  <section class="gallery">
+    <div class="photo">
+      <img src="photo1.jpg" alt="Memory 1">
+      <div class="caption">your selfie tandas update</div>
+    </div>
+    <div class="photo">
+      <img src="photo2.jpg" alt="Memory 2">
+      <div class="caption">makanan??</div>
+    </div>
+    <div class="photo">
+      <img src="photo3.jpg" alt="Memory 3">
+      <div class="caption">you with hadiah ibu🤩</div>
+    </div>
+    <div class="photo">
+      <img src="photo4.jpg" alt="Memory 4">
+      <div class="caption">you + ur matcha dengar i yap pasal cerita hantu hsm😂</div>
+    </div>
+    <div class="photo">
+      <img src="photo5.jpg" alt="Memory 5">
+      <div class="caption">me buying ur flowers☺️✨</div>
+    </div>
+    <div class="photo">
+      <img src="photo6.jpg" alt="Memory 6">
+      <div class="caption">you with flowers🥰</div>
+    </div>
+  </section>
+
+  <div class="message">
+    Every photo is a piece of our journey. No matter where life takes us, these memories will always have a special place in my heart. Thank you for being you. 💗
+  </div>
+</body>
+</html>
